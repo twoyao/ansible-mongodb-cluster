@@ -35,7 +35,7 @@
     delay: 5
 
 - name: Create the file to initialize the mongod replica set
-  template: src=mongoc_init.js.j2 dest=/tmp/mongoc_init.js
+  template: src=mongod_init.js.j2 dest=/tmp/mongod_init.js
 
 - name: Initialize the replication set
   shell: /usr/bin/mongo "localhost:{{ mongod_port }}/admin" /tmp/mongoc_init.js

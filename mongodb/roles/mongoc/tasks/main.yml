@@ -27,7 +27,7 @@
     delay: 3
 
 - name: Create the file to initialize mongo user
-  template: src=mongod_init.js.j2 dest=/tmp/mongod_init.js
+  template: src=mongoc_init.js.j2 dest=/tmp/mongoc_init.js
   when: "{{inventory_hostname == groups['mongoc_servers'][0]}}"
 
 - name: Create admin User
