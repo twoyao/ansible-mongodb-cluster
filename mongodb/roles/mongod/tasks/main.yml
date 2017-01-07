@@ -38,6 +38,6 @@
   template: src=mongod_init.js.j2 dest=/tmp/mongod_init.js
 
 - name: Initialize the replication set
-  shell: /usr/bin/mongo "localhost:{{ mongod_port }}/admin" /tmp/mongoc_init.js
+  shell: /usr/bin/mongo "localhost:{{ mongod_port }}/admin" /tmp/mongod_init.js
   ignore_errors: yes
 

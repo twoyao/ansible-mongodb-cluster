@@ -31,7 +31,7 @@
   when: "{{inventory_hostname == groups['mongoc_servers'][0]}}"
 
 - name: Create admin User
-  shell: /usr/bin/mongo "localhost:{{ mongoc_port }}/admin" /tmp/mongod_init.js
+  shell: /usr/bin/mongo "localhost:{{ mongoc_port }}/admin" /tmp/mongoc_init.js
   when: "{{inventory_hostname == groups['mongoc_servers'][0]}}"
   ignore_errors: yes
 

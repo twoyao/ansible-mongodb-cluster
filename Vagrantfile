@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "mongo#{i}" do |node|
         node.vm.box = "centos/7"
         node.vm.hostname = "mongo#{i}"
-        node.vm.network :private_network, ip: "10.0.0.1#{i}"
+        node.vm.network :private_network, ip: "11.0.0.1#{i}"
         node.vm.provider "virtualbox" do |vb|
           vb.memory = "256"
         end

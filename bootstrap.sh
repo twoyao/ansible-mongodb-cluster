@@ -7,7 +7,7 @@ done
 
 cat >> /etc/hosts <<EOL
 # vagrant environment nodes
-10.0.0.11 mongo1
-10.0.0.12 mongo2
-10.0.0.13 mongo3
+11.0.0.11 mongo1
+11.0.0.12 mongo2
+11.0.0.13 mongo3
 EOL
