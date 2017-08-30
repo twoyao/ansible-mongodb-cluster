@@ -58,7 +58,7 @@ Build the site by **vagrant ansible provision** using the following command:
 
 
 Once configuration and deployment has completed we can check replication set availability by connecting to individual primary replication set nodes.
-Run `vagrant ssh mongo1 ` to login then exec `mongo locahost/admin -u admin -p 123456` 
+Run `vagrant ssh mongo1 ` to login then exec `mongo localhost/admin -u admin -p 123456` 
 and issue the command to query the status of replication set, we should get a similar output.
  
     mongos> sh.status()
