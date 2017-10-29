@@ -37,7 +37,8 @@
     proto: tcp
     setype: mongod_port_t
     state: present
-
+  when: ansible_selinux is defined and ansible_selinux != False and ansible_selinux.status == 'enabled'
+    
 - name: Create the mongod user
   user: name=mongod comment="MongoD"
 
